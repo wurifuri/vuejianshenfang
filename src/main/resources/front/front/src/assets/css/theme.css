@@ -1,0 +1,57 @@
+/* 修改 Element UI 主题色为红色 */
+:root {
+  --el-color-primary: #F56C6C;
+  --el-color-primary-light-3: #F89898;
+  --el-color-primary-light-5: #FAB6B6;
+  --el-color-primary-light-7: #FCD3D3;
+  --el-color-primary-light-8: #FDE2E2;
+  --el-color-primary-light-9: #FEF0F0;
+  --el-color-primary-dark-2: #E64A4A;
+}
+
+/* 覆盖 Element UI 组件的主要颜色 */
+.el-button--primary {
+  --el-button-bg-color: var(--el-color-primary);
+  --el-button-border-color: var(--el-color-primary);
+  --el-button-hover-bg-color: var(--el-color-primary-light-3);
+  --el-button-hover-border-color: var(--el-color-primary-light-3);
+}
+
+.el-tabs__item.is-active {
+  color: var(--el-color-primary);
+}
+
+.el-tabs__active-bar {
+  background-color: var(--el-color-primary);
+}
+
+.el-menu-item.is-active {
+  color: var(--el-color-primary);
+}
+
+.el-pagination.is-background .el-pager li:not(.is-disabled).is-active {
+  background-color: var(--el-color-primary);
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  background-color: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+}
+
+.el-switch.is-checked {
+  --el-switch-on-color: var(--el-color-primary);
+}
+
+/* 修改加载动画颜色 */
+.el-loading-spinner .el-loading-text {
+  color: var(--el-color-primary);
+}
+
+.el-loading-spinner .path {
+  stroke: var(--el-color-primary);
+} 
